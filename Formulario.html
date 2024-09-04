@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    
+
+    <div class="container mt-5">
+        <a href="index.html" class="btn btn-Light">Voltar</a> 
+        
+        <form>
+            <h1 class="mb-4">Cadastro de Usuário</h1>
+            
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha">
+            </div>
+            
+            <div class="form-group">
+                <label>Sexo:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="masculino" name="sexo" value="masculino">
+                    <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="feminino" name="sexo" value="feminino">
+                    <label class="form-check-label" for="feminino">Feminino</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="uf">UF</label>
+                <select class="form-control" id="uf" name="uf">
+                    <option value="DF">DF</option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                    <option value="MG">MG</option>
+                </select>
+            </div>
+            
+            <fieldset class="form-group">
+                <legend>Hobbies</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="futebol" name="hobbies" value="futebol">
+                    <label class="form-check-label" for="futebol">Futebol</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="xadrez" name="hobbies" value="xadrez">
+                    <label class="form-check-label" for="xadrez">Xadrez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="esportes" name="hobbies" value="esportes">
+                    <label class="form-check-label" for="esportes">Esportes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="musica" name="hobbies" value="musica">
+                    <label class="form-check-label" for="musica">Música</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cinema" name="hobbies" value="cinema">
+                    <label class="form-check-label" for="cinema">Cinema</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="leitura" name="hobbies" value="leitura">
+                    <label class="form-check-label" for="leitura">Leitura</label>
+                </div>
+            </fieldset>
+            
+            <div class="form-group">
+                <label for="observacoes">Observações:</label>
+                <textarea class="form-control" id="observacoes" name="observacoes" rows="4"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="button" class="btn btn-secondary"><a href="Index.html" class="text-white text-decoration-none">Voltar</a></button>
+                <input type="reset" class="btn btn-warning" value="Limpar">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
